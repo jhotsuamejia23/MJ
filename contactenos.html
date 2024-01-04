@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contáctenos</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li class="active"><a href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <p id="dayOfWeek"></p>
+    </header>
+
+    <section id="cover">
+        <!-- Imagen de portada común para todas las secciones -->
+        <img src="cover3.jpg" alt="Cover Image">
+    </section>
+
+    <section id="informacionContacto">
+        <h2>Información de Contacto</h2>
+        <p><strong>Dirección:</strong> Ciudad de Panamá, Panamá</p>
+        <p><strong>Correo Electrónico:</strong> jmejia@jm.com.pa</p>
+        <p><strong>Teléfono:</strong> +507 1234-5678</p>
+    </section>
+
+    <section id="mapa">
+        <h2>Ubicación en el Mapa</h2>
+        <!-- Mapa de Google (reemplaza 'TU_API_KEY' con tu clave de API de Google Maps) -->
+        <iframe
+            width="100%"
+            height="400"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=TU_API_KEY&q=Panama+City"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section id="formularioContacto">
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2016. Sitio Web con los derechos reservados. Jhotsua Mejia</p>
+    </footer>
+</body>
+</html>
